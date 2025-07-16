@@ -1,5 +1,5 @@
-import css from "../styles/VoteStats.module.css"
-import type { VoteStats } from "../types/votes"
+import css from "./VoteStats.module.css"
+import type { VoteStats } from "../../types/votes"
 
 export default function VoteStats({
 	votes: { good, neutral, bad },
