@@ -3,13 +3,4 @@ export interface Votes {
 	neutral: number
 	bad: number
 }
-export interface VoteStats {
-	votes: Votes
-	total: number
-	percent: number
-}
-export interface VoteOptions {
-	onVote: (key: keyof Votes) => void
-	onReset: () => void
-	canReset: boolean
-}
+export type VoteType = keyof Votes
